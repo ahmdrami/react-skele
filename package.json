@@ -1,0 +1,41 @@
+{
+  "name": "react-skele",
+  "version": "1.0.0",
+  "description": "React starter pack with ssr, lazy load and many other features etc",
+  "main": "main.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AR",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-hot-loader": "^4.3.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/react": "^16.4.16",
+    "@types/react-dom": "^16.0.9",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.4",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.1.3",
+    "webpack": "^4.20.2",
+    "webpack-bundle-analyzer": "^3.0.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-middleware": "^3.4.0",
+    "webpack-hot-middleware": "^2.24.3",
+    "webpack-merge": "^4.1.4"
+  }
+}
