@@ -1,4 +1,4 @@
-const webpack = require('webpack');
+const webpack = require('webpack')
 module.exports = {
   devtool: 'source-map',
   module: {
@@ -14,8 +14,5 @@ module.exports = {
       // }
     ]
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
-  ]
+  plugins: [new webpack.HotModuleReplacementPlugin()]
 }

@@ -11,9 +11,9 @@ const Home = ({ title, description }: PageTitle) => (
   <div>
     <h1>{title}</h1>
     <p>{description}</p>
-    <span>this ssis sssda tessts</span>
+    <span>this ssis sssda tessssts</span>
 
-    <About />
+    <About/>
   </div>
 )
 export default hot(module)(Home)

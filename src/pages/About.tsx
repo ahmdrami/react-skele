@@ -1,7 +1,5 @@
-import * as React from 'react';
+import * as React from 'react'
 
-const About = () => (
-   <div>Hello. Abouts s</div>
-)
+const About = () => <div>Hello. Abouts</div>
 
-export default About;
+export default About

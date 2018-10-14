@@ -4,16 +4,15 @@ const webpackDevMiddleware = require('webpack-dev-middleware')
 const webpackHotMiddleware = require('webpack-hot-middleware')
 const webpackConfig = require('./webpack.config.babel')
 const compiler = webpack(webpackConfig)
+const chalk = require('chalk');
 
 const app = express()
 app.use(
   webpackDevMiddleware(compiler, {
+    logLevel: 'warn',
     publicPath: webpackConfig.output.publicPath,
     watchOptions: {
       ignored: ['node_modules']
-    },
-    stats: {
-      colors: true
     }
   })
 )
@@ -31,5 +30,5 @@ app.get('/', (req, res) => {
 })
 
 if (require.main === module) {
-  app.listen(3000, () => console.log('Server listening on port 3000'))
+  app.listen(3000, () => console.log(chalk.blue('Server listening on port 3000')))
 }

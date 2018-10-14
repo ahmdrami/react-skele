@@ -1,6 +1,10 @@
 {
-  "extends": [],
-  "defaultSeverity": "warning",
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-react"],
+  "rules": {
+    "semicolon": [true, "never"],
+    "quotemark": [true, "single", "jsx-double"]
+  },
   "linterOptions": {
     "exclude": ["node_modules/**/*.ts"]
   }
