@@ -1,9 +1,13 @@
 {
   "defaultSeverity": "error",
-  "extends": ["tslint:recommended", "tslint-react"],
+  "extends": ["tslint:recommended"],
   "rules": {
     "semicolon": [true, "never"],
-    "quotemark": [true, "single", "jsx-double"]
+    "quotemark": [true, "single", "jsx-double"],
+    "arrow-parens": false,
+    "ordered-imports": [
+      false
+    ]
   },
   "linterOptions": {
     "exclude": ["node_modules/**/*.ts"]
