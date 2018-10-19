@@ -1,13 +1,12 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const webpack = require('webpack')
-const path = require('path')
-const webpackMerge = require('webpack-merge')
-var querystring = require('querystring');
-const { CheckerPlugin } = require('awesome-typescript-loader')
+const path = require('path');
+const webpackMerge = require('webpack-merge');
+const { CheckerPlugin } = require('awesome-typescript-loader');
 
-const env = process.env.NODE_ENV
-const configMode = require(`./config/webpack.${env}`)
-
+const env = process.env.NODE_ENV;
+const configMode = require(`./config/webpack.${env}`);
+console.log(configMode);
 // console.log('environment: ', env)
 // const loadPresets = require('./config/webpack/loadPresets')
 // const CleanWebpackPlugin = require('clean-webpack-plugin')
@@ -74,10 +73,11 @@ module.exports = webpackMerge(
       new CheckerPlugin(),
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, 'src/index.html')
-      })
+      }),
+      
     ]
   },
   configMode
-)
+);
 //
 //  loadPresets({ mode, presets })

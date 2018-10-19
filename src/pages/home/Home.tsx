@@ -1,13 +1,14 @@
-import * as React from 'react'
+import * as React from 'react';
+import styled from 'styled-components';
 
-export interface IPageTitle {
-  title: string
-  description: string
-}
+const SH1 = styled.h1`
+  font-size: 3em;
+  color: black;
+`;
 
 const Home = () => (
   <div>
-    <span>this ssis sssda tessssts</span>
+    <SH1 id="testt">React</SH1>
   </div>
-)
-export default Home
+);
+export default Home;
