@@ -8,7 +8,7 @@ const SH1 = styled.h1`
 
 const Home = () => (
   <div>
-    <SH1 id="testt">React</SH1>
+    <SH1 id="testt">Home</SH1>
   </div>
 );
 export default Home;

@@ -1,6 +1,18 @@
-const webpack = require('webpack')
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+
+const htmlPlugin = new HtmlWebpackPlugin({
+  template: `!!raw-loader!${path.join(process.cwd(), 'src/index.template.ejs')}`
+  // filename: path.resolve(__dirname, 'views/index.ejs'),
+  // minify: {
+  //   removeComments: true,
+  //   collapseWhitespace: true,
+  //   conservativeCollapse: true,
+  // },
+});
+
 module.exports = {
-  devtool: 'source-map',
   module: {
     rules: [
       // {
@@ -14,5 +26,7 @@ module.exports = {
       // }
     ]
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
-}
+  plugins: [
+    // new webpack.HotModuleReplacementPlugin()
+  ]
+};
